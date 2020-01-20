@@ -1,0 +1,42 @@
+body {
+    color: rgb(100, 0, 100);
+    max-width: 60em;
+    border: 1px solid blue; /* -width -style -color */
+    margin: 1em auto; /* top + bottom / left + right */
+    padding: 1em;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+.ljod p {
+    font-style: italic;
+}
+.ljod strong {
+    color: darkred;
+}
+.ljod {
+    margin-left: 3em;
+}
+ul li {
+    color: green;
+}
+.Elvis {
+    color: red;
+}
+a {
+    color: red;
+    background-color: blue;
+}
+a:visited {
+    color: blue;
+    background-color: red;
+}
+a:hover, a:active {
+    color: purple;
+    background-color: green;
+}
+.blatt {
+    color: blue;
+}
