@@ -1,0 +1,50 @@
+body {
+    max-width: 60em;
+    border: 1px solid blue; /* -width -style -color */
+    margin: 1em auto; /* top + bottom / left + right */
+    padding: 1em;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    color: blue;
+}
+h2 {
+    color: darkred;
+}
+.ljod p {
+    font-style: italic;
+    color: blue;
+}
+.ljod strong {
+    color: red;
+}
+.ljod {
+    margin-left: 3em;
+}
+ul li {
+    color: green;
+}
+.Elvis {
+    color: red;
+}
+a {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover, a:active {
+    color: white;
+    background-color: black;
+}
+.blatt {
+    color: blue;
+}
+.red {
+    color: red;
+}
+.ljod h5 {
+    color: blue;
+    margin-left: .1em;
+}
