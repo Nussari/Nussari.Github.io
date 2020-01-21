@@ -1,5 +1,4 @@
 body {
-    color: rgb(100, 0, 100);
     max-width: 60em;
     border: 1px solid blue; /* -width -style -color */
     margin: 1em auto; /* top + bottom / left + right */
@@ -8,13 +7,17 @@ body {
 }
 h1 {
     text-align: center;
-    color: darkblue;
+    color: blue;
+}
+h2 {
+    color: darkred;
 }
 .ljod p {
     font-style: italic;
+    color: blue;
 }
 .ljod strong {
-    color: darkred;
+    color: red;
 }
 .ljod {
     margin-left: 3em;
@@ -26,17 +29,22 @@ ul li {
     color: red;
 }
 a {
-    color: red;
-    background-color: blue;
+    color: black;
 }
 a:visited {
-    color: blue;
-    background-color: red;
+    color: black;
 }
 a:hover, a:active {
-    color: purple;
-    background-color: green;
+    color: white;
+    background-color: black;
 }
 .blatt {
     color: blue;
+}
+.red {
+    color: red;
+}
+.ljod h5 {
+    color: blue;
+    margin-left: .1em;
 }
