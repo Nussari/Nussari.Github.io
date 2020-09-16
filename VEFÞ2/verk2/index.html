@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<style>
+    h1 {
+        position: relative;
+        top: 7em;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    polyline {
+        stroke: black;
+        stroke-width: 15px;
+        fill: none;
+        stroke-dasharray: 1440;
+        stroke-dashoffset: 0;
+    }
+    polyline:hover {
+        animation: vah 3s linear forwards;
+    }
+    .circle1 {
+        stroke: black;
+        stroke-width: 10px;
+        fill: darkviolet;
+        animation: color 2s linear infinite;
+    }
+    .circle2 {
+        stroke: yellow;
+        stroke-width: 10px;
+        fill: none;
+        stroke-dasharray: 100;
+        animation: spin 3s linear infinite forwards;
+    }
+    @keyframes vah {
+        0% {stroke-dashoffset: 0;}
+        50% {stroke-dashoffset: 1440;}
+        100% {stroke-dashoffset: 0;}
+    }
+    @keyframes color {
+        0% {fill: darkred;}
+        25% {fill: darkviolet;}
+        75% {fill: darkblue;}
+        100% {fill: darkred;}
+    }
+    @keyframes spin {
+        0% {stroke-dashoffset: 0;}
+        100% {stroke-dashoffset: 1000;}
+    }
+</style>
+<body>
+    <h1>Hoveraðu yfir dótið í miðjunni</h1>
+    <svg viewBox="0 0  1310 800">
+        <circle 
+        class="circle1"
+        cx="636"
+        cy="387"
+        r="189.219"/>
+        <polyline
+        points="463.961 274.639 554.241 512.639 657.241 280.639 705.241 509.639 617.45 393.639 797.241 391.639 801.891 262.729 793.66 497.449" 
+        transform="matrix(0.934604 0 0 0.934604 39.7211 31.7414)"/>
+        <circle
+        class="circle2"
+        cx="636"
+        cy="387"
+        r="189.219"/>
+    </svg>
+</body>
+</html>
