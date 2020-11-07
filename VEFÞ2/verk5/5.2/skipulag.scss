@@ -1,0 +1,36 @@
+@import 'kvikun';
+@import 'topmenu';
+@import 'formtoflur';
+
+body{
+    margin: 0 auto;
+}
+.v1{
+    grid-area: v1;
+}
+.v2{
+    grid-area: v2;
+}
+.v3{
+    grid-area: v3;
+}
+.v4{
+    grid-area: v4;
+}
+@media screen and (min-width: 48em){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "v3 v3"
+        "v1 v2"
+        "v4 v4";
+    }
+    .v1{
+        display: flex;
+        justify-content: space-around;
+    }
+    .v3 header{
+        display: inline;
+    }
+}

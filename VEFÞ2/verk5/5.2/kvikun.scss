@@ -1,0 +1,114 @@
+/* VERKEFNI 1 */
+.v1{
+    body {
+        display: grid;
+        justify-content: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    div {
+        border: 1px solid black;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .ad {
+        position: relative;
+        left: -200px;
+        animation: sidetext 3s linear infinite;
+    }
+    img {
+        position: absolute;
+        width: 400px;
+        height: 340px;
+        animation: resize 2s linear, fade 5s;
+    }
+    .top {
+        position: relative;
+        top: 40px;
+        left: 120px;
+        animation: blink 2s linear infinite;
+    }
+    .button {
+        position: relative;
+        top: 220px;
+        padding: .7em 1.2em;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: .3em;
+        color: black;
+        text-decoration: none;
+        animation: slide .5s forwards linear;
+    }
+    @keyframes sidetext {
+        from {left: -200px;}
+        to {left: 400px;}
+    }
+    @keyframes resize {
+        0% {transform: scale(0);}
+        100% {transform: scale(1);}
+    }
+    @keyframes fade {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    @keyframes blink {
+        0% {color: green;}
+        25% {color: red;}
+        50% {color: yellow;}
+        75% {color: blue;}
+        100% {color: pink;}
+    }
+    @keyframes slide {
+        0% {left: 400px;}
+        75% {left: 120px;}
+        85% {left: 160px;}
+        100% {left: 140px;}
+    }
+}
+/* VERKEFNI 2 */
+.v2{
+    h1 {
+        position: relative;
+        top: 7em;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    polyline {
+        stroke: black;
+        stroke-width: 15px;
+        fill: none;
+        stroke-dasharray: 1440;
+        stroke-dashoffset: 0;
+    }
+    polyline:hover {
+        animation: vah 3s linear forwards;
+    }
+    .circle1 {
+        stroke: black;
+        stroke-width: 10px;
+        fill: darkviolet;
+        animation: color 2s linear infinite;
+    }
+    .circle2 {
+        stroke: yellow;
+        stroke-width: 10px;
+        fill: none;
+        stroke-dasharray: 100;
+        animation: spin 3s linear infinite forwards;
+    }
+    @keyframes vah {
+        0% {stroke-dashoffset: 0;}
+        50% {stroke-dashoffset: 1440;}
+        100% {stroke-dashoffset: 0;}
+    }
+    @keyframes color {
+        0% {fill: darkred;}
+        25% {fill: darkviolet;}
+        75% {fill: darkblue;}
+        100% {fill: darkred;}
+    }
+    @keyframes spin {
+        0% {stroke-dashoffset: 0;}
+        100% {stroke-dashoffset: 1000;}
+    }
+}

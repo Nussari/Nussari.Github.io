@@ -1,0 +1,143 @@
+/* Gerði bara eina css skra fyrir verk 4 :/ */
+
+.v4{
+    body {
+        background-color: gray;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .takki {
+        border-radius: .4em;
+        border: 1px solid black;
+        background-color: teal;
+        text-decoration: none;
+        color: black;
+        font-size: 2em;
+        padding: .2em .6em;
+        margin-top: 1em;
+    }
+    .takkacontain {
+        display: flex;
+        justify-content: center;
+    }
+    caption {
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: .5em;
+    }
+    table {
+        width: 100%;
+    }
+    thead {
+        display: none;
+    }
+    tr {
+        border: 1px solid black;
+        border-radius: .4em;
+        padding: .5em;
+        display: block;
+        margin-bottom: 1em;
+        background-color: lightgray;
+    }
+    td {
+        display: block;
+        text-align: right;
+        margin-bottom: .2em;
+        border-bottom: 1px solid black;
+    }
+    td:last-child {
+        border-bottom: 0;
+        margin: 0;
+    }
+    td::before {
+        content: attr(data-label);
+        float: left;
+    }
+    textarea {
+        resize: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+    form {
+        background-color: lightgray;
+        border: 1px solid black;
+        border-radius: .4em;
+        padding: .5em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    label {
+        display: block;
+    }
+    input {
+        width: 100%;
+        padding: .2em 0;
+        border-radius: .4em;
+        border: 1px solid black;
+        margin: .5em auto;
+        display: block;
+        font-size: larger;
+    }
+    .box input {
+        width: auto;
+        display: inline;
+    }
+    .box {
+        margin-top: .3em;
+
+    }
+    .box:last-of-type {
+        margin-bottom: .3em;
+    }
+    select {
+        display: block;
+        font-size: 1.2em;
+        width: 100%;
+        padding: .2em 0;
+        border-radius: .4em;
+        border: 1px solid black;
+    }
+    @media screen and (min-width: 48em){
+        body {
+            max-width: 60em;
+            margin: .5em auto;
+        }
+        thead {
+            display: table-header-group;
+        }
+        tr {
+            display: table-row;
+            border: none;
+            padding: 0;
+            margin: 0;
+            background-color: inherit;
+        }
+        td {
+            display: table-cell;
+            text-align: center;
+            padding: .5em 0;
+            margin: 0;
+            border: none;
+        }
+        td::before {
+            content: none;
+        }
+        table {
+            max-width: 48em;
+            margin: 0 auto;
+            background-color: lightgray;
+            border: 1px solid black;
+            border-radius: .4em;
+        }
+        .dalkur {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .haegri {
+            margin-left: 1em;
+        }
+        .vinstri {
+            margin-right: 1em;
+        }
+    }
+}
