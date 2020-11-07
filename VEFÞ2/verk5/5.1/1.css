@@ -1,0 +1,18 @@
+.variables {
+  background-color: lightgray;
+}
+
+.nested .myNestedPara {
+  background-color: lightgray;
+}
+
+.mixVar {
+  background-color: lightgray;
+  color: darkblue;
+}
+
+.func {
+  background-color: lightgray;
+  color: #000099;
+}
+/*# sourceMappingURL=1.css.map */

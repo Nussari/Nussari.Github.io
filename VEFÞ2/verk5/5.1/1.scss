@@ -1,0 +1,26 @@
+$litur: lightgray;
+
+@mixin wowlitir($a){
+    background-color: $litur;
+    color: $a;
+}
+
+@mixin dekkrilitur($x){
+    background-color: $litur;
+    color: darken($color: $x, $amount: 20);
+}
+
+.variables{
+    background-color: $litur;
+}
+.nested{
+    .myNestedPara{
+        background-color: $litur;
+    }
+}
+.mixVar{
+    @include wowlitir(darkblue)
+}
+.func{
+    @include dekkrilitur(blue)
+}
