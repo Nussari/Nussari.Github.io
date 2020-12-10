@@ -1,0 +1,46 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>My Recipes</h1>
+
+<div class="posts">
+
+{% for post in posts %}
+
+    <div class="post">
+
+        <article>
+            <div class="thumbnail">
+                <img src="{{ post.thumbnail }}">
+            </div>
+            <div class="info">
+                <h2>{{ post.title }}</h2>
+                <small>{{ post.date }}</small>
+                <p>
+                    {{ post.summary}}
+                </p>
+                <a class="button" href="{{ post.slug }}.html">Recipe</a>
+                <br>
+                {% set list_of_tags = post.tags.split(",") %}
+                {% for tag in list_of_tags %}
+                    <button>{{ tag }}</button>
+                {% endfor %}
+            </div>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>{{loop.index}}: <a href="posts/{{ post.slug }}.html">{{post.title}}</a> <small>{{post.date}}</small></h2>
+            {{post.summary}}
+        </p> -->
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
