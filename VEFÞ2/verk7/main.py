@@ -45,3 +45,4 @@ for post in POSTS:
     with open(post_file_path, 'w') as file:
         file.write(post_html)
 
+# encoding='utf-8' myndi örgl laga vandamalið með islensku stafina en eg er of þreyttur tilsa reyna
